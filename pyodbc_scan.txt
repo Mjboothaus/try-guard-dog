@@ -1,0 +1,6 @@
+Found 1 potentially malicious indicators in pyodbc
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at pyodbc-4.0.35/setup.py:66
+        return os.system(cmd)
+
