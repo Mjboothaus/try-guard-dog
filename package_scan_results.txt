@@ -1,0 +1,440 @@
+0: Found 0 potentially malicious indicators scanning aiofiles
+
+1: Found 0 potentially malicious indicators scanning aiohttp
+
+2: Found 0 potentially malicious indicators scanning aiosignal
+
+3: Found 0 potentially malicious indicators scanning aiosqlite
+
+4: Found 0 potentially malicious indicators scanning alembic
+
+5: Found 0 potentially malicious indicators scanning altair
+
+6: Found 0 potentially malicious indicators scanning anyio
+
+7: Found 0 potentially malicious indicators scanning appnope
+
+8: Found 0 potentially malicious indicators scanning argon2-cffi
+
+9: Found 0 potentially malicious indicators scanning argon2-cffi-bindings
+
+10: Found 0 potentially malicious indicators scanning asgi-lifespan
+
+11: Found 0 potentially malicious indicators scanning asttokens
+
+12: Found 0 potentially malicious indicators scanning async-timeout
+
+13: Found 0 potentially malicious indicators scanning asyncpg
+
+14: Found 0 potentially malicious indicators scanning attrs
+
+15: Found 0 potentially malicious indicators scanning backcall
+
+16: Found 0 potentially malicious indicators scanning beautifulsoup4
+
+17: Found 0 potentially malicious indicators scanning bleach
+
+18: Found 0 potentially malicious indicators scanning blinker
+
+19: Found 0 potentially malicious indicators scanning build
+
+20: Found 0 potentially malicious indicators scanning cachetools
+
+21: Found 0 potentially malicious indicators scanning certifi
+
+22: Found 0 potentially malicious indicators scanning cffi
+
+23: Found 0 potentially malicious indicators scanning charset-normalizer
+
+24: Found 0 potentially malicious indicators scanning click
+
+25: Found 0 potentially malicious indicators scanning click-default-group-wheel
+
+26: Found 0 potentially malicious indicators scanning cloudpickle
+
+27: Found 1 potentially malicious indicators in commonmark
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at commonmark-0.9.1/setup.py:18
+        errno = subprocess.call([
+                sys.executable, 'commonmark/tests/run_spec_tests.py'])
+
+28: Found 0 potentially malicious indicators scanning coolname
+
+29: Found 0 potentially malicious indicators scanning croniter
+
+30: Found 1 potentially malicious indicators in cryptography
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at cryptography-38.0.4/setup.py:99
+        rustc_output = subprocess.run(
+                    ["rustc", "--version"],
+                    capture_output=True,
+                    timeout=0.5,
+                    encoding="utf8",
+                    check=True,
+                ).stdout
+
+31: Found 1 potentially malicious indicators in cycler
+
+empty_information: This package has an empty description on PyPi
+
+32: Found 0 potentially malicious indicators scanning debugpy
+
+33: Found 0 potentially malicious indicators scanning decorator
+
+34: Found 1 potentially malicious indicators in defusedxml
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at defusedxml-0.7.1/setup.py:22
+        errno = subprocess.call([sys.executable, "tests.py"])
+
+35: Found 0 potentially malicious indicators scanning docker
+
+36: Found 0 potentially malicious indicators scanning entrypoints
+
+37: Found 0 potentially malicious indicators scanning executing
+
+38: Found 0 potentially malicious indicators scanning fastapi
+
+39: Found 1 potentially malicious indicators in fastjsonschema
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at fastjsonschema-2.16.2/setup.py:14
+        execfile('fastjsonschema/version.py')
+
+40: Found 0 potentially malicious indicators scanning fonttools
+
+41: Found 0 potentially malicious indicators scanning fortls
+
+42: Found 0 potentially malicious indicators scanning frozenlist
+
+43: Found 0 potentially malicious indicators scanning fsspec
+
+44: Found 0 potentially malicious indicators scanning gitdb
+
+45: Found 0 potentially malicious indicators scanning GitPython
+
+46: Found 0 potentially malicious indicators scanning google-auth
+
+47: Found 0 potentially malicious indicators scanning greenlet
+
+48: Found 0 potentially malicious indicators scanning griffe
+
+49: Found 0 potentially malicious indicators scanning h11
+
+50: Found 0 potentially malicious indicators scanning httpcore
+
+51: Found 0 potentially malicious indicators scanning httpx
+
+52: 
+Attempted directory traversal via symlink for member: ../idna/intranges.py
+53: Found 0 potentially malicious indicators scanning importlib-metadata
+
+54: Found 0 potentially malicious indicators scanning ipykernel
+
+55: Found 0 potentially malicious indicators scanning ipython
+
+56: Found 0 potentially malicious indicators scanning ipython-genutils
+
+57: Found 0 potentially malicious indicators scanning ipywidgets
+
+58: Found 0 potentially malicious indicators scanning jedi
+
+59: Found 0 potentially malicious indicators scanning Jinja2
+
+60: Found 0 potentially malicious indicators scanning json5
+
+61: Found 0 potentially malicious indicators scanning jsonpatch
+
+62: Found 0 potentially malicious indicators scanning jsonpointer
+
+63: Found 0 potentially malicious indicators scanning jsonschema
+
+64: Found 0 potentially malicious indicators scanning jupyter-client
+
+65: Found 0 potentially malicious indicators scanning jupyter-core
+
+66: Found 0 potentially malicious indicators scanning jupyterlab-pygments
+
+67: Found 0 potentially malicious indicators scanning jupyterlab-widgets
+
+68: Found 0 potentially malicious indicators scanning kiwisolver
+
+69: Found 0 potentially malicious indicators scanning kubernetes
+
+70: Found 0 potentially malicious indicators scanning llvmlite
+
+71: Found 0 potentially malicious indicators scanning lxml
+
+72: Found 0 potentially malicious indicators scanning Mako
+
+73: Found 0 potentially malicious indicators scanning MarkupSafe
+
+74: Found 1 potentially malicious indicators in matplotlib
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at matplotlib-3.6.2/setup.py:131
+        result = subprocess.run(self.compiler.compiler +
+                                            ['--version'],
+                                            stdout=subprocess.PIPE,
+                                            stderr=subproces...ines=True)
+
+75: Found 0 potentially malicious indicators scanning matplotlib-inline
+
+76: Found 0 potentially malicious indicators scanning mistune
+
+77: Found 0 potentially malicious indicators scanning multidict
+
+78: Found 0 potentially malicious indicators scanning nbclient
+
+79: Found 0 potentially malicious indicators scanning nbconvert
+
+80: Found 0 potentially malicious indicators scanning nbformat
+
+81: Found 0 potentially malicious indicators scanning nest-asyncio
+
+82: Found 0 potentially malicious indicators scanning notebook
+
+83: Found 0 potentially malicious indicators scanning numba
+
+84: Found 1 potentially malicious indicators in numpy
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at numpy-1.23.5/setup.py:275
+        p = subprocess.call([sys.executable,
+                                 os.path.join(cwd, 'tools', 'cythonize.py'),
+                                 'numpy/{0}'.format(d)],
+                                cwd=cwd)
+
+85: Found 0 potentially malicious indicators scanning oauthlib
+
+86: Found 0 potentially malicious indicators scanning packaging
+
+87: Found 0 potentially malicious indicators scanning pandas
+
+88: Found 0 potentially malicious indicators scanning pandocfilters
+
+89: Found 0 potentially malicious indicators scanning parso
+
+90: Found 0 potentially malicious indicators scanning pathspec
+
+91: Found 0 potentially malicious indicators scanning pendulum
+
+92: Found 0 potentially malicious indicators scanning pep517
+
+93: Found 0 potentially malicious indicators scanning pexpect
+
+94: Found 0 potentially malicious indicators scanning pickleshare
+
+95: Found 1 potentially malicious indicators in Pillow
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at Pillow-9.3.0/setup.py:416
+        subprocess.check_output(["xcrun", "--show-sdk-path"])
+
+96: Found 0 potentially malicious indicators scanning pip
+
+97: Found 0 potentially malicious indicators scanning pip-tools
+
+98: Found 0 potentially malicious indicators scanning prometheus-client
+
+99: Found 0 potentially malicious indicators scanning prompt-toolkit
+
+100: Found 2 potentially malicious indicators in protobuf
+
+empty_information: This package has an empty description on PyPi
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at protobuf-4.21.11/setup.py:90
+        if subprocess.call(protoc_command) != 0:
+
+101: Found 0 potentially malicious indicators scanning psutil
+
+102: Found 0 potentially malicious indicators scanning ptyprocess
+
+103: Found 0 potentially malicious indicators scanning pure-eval
+
+104: Found 0 potentially malicious indicators scanning pyarrow
+
+105: Found 0 potentially malicious indicators scanning pyasn1
+
+106: Found 0 potentially malicious indicators scanning pyasn1-modules
+
+107: Found 1 potentially malicious indicators in pycparser
+
+cmd-overwrite: found 1 source code matches
+  * Standard pip command overwritten in setup.py at pycparser-2.21/setup.py:35
+        setup(
+        # metadata
+        name='pycparser',
+        description='C parser in Python',
+        long_description="""
+            pycparser is a complete parser of the C language, written in
+            pure Python using the PLY parsing library.
+            It pa... sdist},
+    )
+
+108: Found 0 potentially malicious indicators scanning pydantic
+
+109: Found 2 potentially malicious indicators in pydeck
+
+cmd-overwrite: found 1 source code matches
+  * Standard pip command overwritten in setup.py at pydeck-0.8.0/setup.py:175
+        setup(
+            name="pydeck",
+            version=version_ns["__version__"],
+            description="Widget for deck.gl maps",
+            long_description="{}".format(read("README.md")),
+            long_description_content_type="text/markdown",
+        ...lse,
+        )
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at pydeck-0.8.0/setup.py:164
+        command.run(self)
+
+110: Found 2 potentially malicious indicators in Pygments
+
+empty_information: This package has an empty description on PyPi
+
+shady-links: found 1 source code matches
+  * Detected a link to a domain with a suspicious extension at Pygments-2.13.0/pygments/lexers/tcl.py:44
+        url = 'https://www.tcl.tk/about/language.html'
+
+111: Found 1 potentially malicious indicators in Pympler
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at Pympler-1.0.1/setup.py:43
+        sys.exit(run(args).returncode)
+
+112: 
+Received status code: 404 from PyPI
+113: Found 0 potentially malicious indicators scanning pyparsing
+
+114: Found 0 potentially malicious indicators scanning pyrsistent
+
+115: Found 0 potentially malicious indicators scanning python-dateutil
+
+116: Found 0 potentially malicious indicators scanning python-docx
+
+117: Found 0 potentially malicious indicators scanning python-slugify
+
+118: Found 0 potentially malicious indicators scanning pytidylib
+
+119: Found 0 potentially malicious indicators scanning pytz
+
+120: Found 0 potentially malicious indicators scanning pytz-deprecation-shim
+
+121: Found 0 potentially malicious indicators scanning pytzdata
+
+122: Found 0 potentially malicious indicators scanning PyYAML
+
+123: Found 0 potentially malicious indicators scanning pyzmq
+
+124: Found 0 potentially malicious indicators scanning readchar
+
+125: Found 0 potentially malicious indicators scanning regex
+
+126: Found 0 potentially malicious indicators scanning requests
+
+127: Found 0 potentially malicious indicators scanning requests-oauthlib
+
+128: Found 0 potentially malicious indicators scanning rfc3986
+
+129: Found 0 potentially malicious indicators scanning rich
+
+130: Found 0 potentially malicious indicators scanning rsa
+
+131: Found 2 potentially malicious indicators in scipy
+
+code-execution: found 1 source code matches
+  * setup.py file executing code at scipy-1.9.3/setup.py:246
+        p = subprocess.call([sys.executable,
+                             os.path.join(cwd, 'tools', 'cythonize.py'),
+                             'scipy'],
+                            cwd=cwd)
+
+shady-links: found 1 source code matches
+  * Detected a link to a domain with a suspicious extension at scipy-1.9.3/benchmarks/benchmarks/go_benchmark_functions/__init__.py:28
+        https://www.geocities.ws/eadorio/mvf.pdf
+
+132: Found 0 potentially malicious indicators scanning semver
+
+133: Found 0 potentially malicious indicators scanning Send2Trash
+
+134: Found 1 potentially malicious indicators in setuptools
+
+shady-links: found 1 source code matches
+  * Detected a link to a domain with a suspicious extension at setuptools-65.6.3/setuptools/package_index.py:409
+        "http://bit.ly/2hrImnY for details).\n"
+
+135: Found 0 potentially malicious indicators scanning six
+
+136: Found 0 potentially malicious indicators scanning slack-sdk
+
+137: Found 0 potentially malicious indicators scanning smmap
+
+138: Found 0 potentially malicious indicators scanning sniffio
+
+139: Found 0 potentially malicious indicators scanning soupsieve
+
+140: Found 0 potentially malicious indicators scanning SQLAlchemy
+
+141: Found 0 potentially malicious indicators scanning sqlite-fts4
+
+142: Found 0 potentially malicious indicators scanning sqlite-utils
+
+143: Found 0 potentially malicious indicators scanning stack-data
+
+144: Found 0 potentially malicious indicators scanning starlette
+
+145: Found 0 potentially malicious indicators scanning tabulate
+
+146: Found 0 potentially malicious indicators scanning terminado
+
+147: Found 0 potentially malicious indicators scanning text-unidecode
+
+148: Found 0 potentially malicious indicators scanning tinycss2
+
+149: Error trying to connect to socket: closing socket - timed out
+Found 0 potentially malicious indicators scanning toml
+
+150: Found 0 potentially malicious indicators scanning tomli
+
+151: Found 0 potentially malicious indicators scanning toolz
+
+152: Found 0 potentially malicious indicators scanning tornado
+
+153: Found 0 potentially malicious indicators scanning traitlets
+
+154: Found 0 potentially malicious indicators scanning typer
+
+155: Found 0 potentially malicious indicators scanning typing_extensions
+
+156: Found 0 potentially malicious indicators scanning tzdata
+
+157: Found 0 potentially malicious indicators scanning tzlocal
+
+158: Found 0 potentially malicious indicators scanning urllib3
+
+159: Found 0 potentially malicious indicators scanning uvicorn
+
+160: Found 0 potentially malicious indicators scanning validators
+
+161: Found 0 potentially malicious indicators scanning watchdog
+
+162: Found 0 potentially malicious indicators scanning wcwidth
+
+163: Found 0 potentially malicious indicators scanning webencodings
+
+164: Found 0 potentially malicious indicators scanning websocket-client
+
+165: Found 0 potentially malicious indicators scanning wheel
+
+166: Found 0 potentially malicious indicators scanning widgetsnbextension
+
+167: Found 0 potentially malicious indicators scanning yarl
+
+168: Found 0 potentially malicious indicators scanning zipp
+
